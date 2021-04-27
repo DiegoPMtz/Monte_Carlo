@@ -11,16 +11,19 @@ public class interfaz {
         Scanner read = new Scanner(System.in);
         operaciones ec1 = new operaciones(1,2,30);
         
-        System.out.println("Cuantos elementos posee tu ecuacion?");
-        int element =read.nextInt();
-        
-        for (int i = element; i > 0; i--) {
+//        System.out.println("Cuantos elementos posee tu ecuacion?");
+//        int element =read.nextInt();
+//        
+//        for (int i = element; i > 0; i--) {
+//        }
             System.out.println("Ingresa el Argumento seguido de la potencia");
             String arg = read.next();
             String pot = read.next();
             
-            ec1.ecuacion(arg,pot, i);
-        }
+            System.out.println("Ingresa el valor de la variable independiente");
+            int indep = read.nextInt();
+            
+            ec1.ecuacion(arg,pot,indep);
         
         System.out.println("Tu ecuacion es: f(x) = " + ec1.ecuacion);
         
